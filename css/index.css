@@ -167,6 +167,7 @@ header {
                              "widget-1 widget-1 widget-2"
                              "footer footer footer";
 
+
     }
 }
 
@@ -375,6 +376,11 @@ header {
 
  #poleras-con-onda h2 h3 h4 h5 {
      background-color: cadetblue;
+ }
+
+ .widget-1,
+ .widget-2 {
+    background-image: linear-gradient(to bottom, #55aBfd , white);
  }
 
  
