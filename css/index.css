@@ -109,10 +109,9 @@ header {
 
 .contenedor > div,
 .contenedor .container,
-.contenedor .sidebar, {
+.contenedor .sidebar {
     padding: 20px;
     border-radius: 4px;
-
 }
 
 .contenedor .header {
@@ -159,13 +158,14 @@ header {
     grid-area: footer;
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 550px){
     .contenedor{
-        grid-template-areas: "header header header"
-                             "container container container"
+        grid-template-areas: "header"
+                             "container"
                              "sidebar sidebar sidebar"
-                             "widget-1 widget-1 widget-2"
-                             "footer footer footer";
+                             "widget-1"
+                             "widget-2"
+                             "footer";
 
 
     }
@@ -383,7 +383,7 @@ header {
     background-image: linear-gradient(to bottom, #55aBfd , white);
  }
 
- 
+
 
 
     
