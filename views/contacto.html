@@ -36,11 +36,12 @@
 
     <!-- formulario de contacto -->
     <main>
-    <section>
+    <section class="formulario">
         <form action="/formulario" method="post">
 
+    
                  <label for="Nombre"> Nombre</label>
-                 <input id="Nombre" type="text" placeholder="Nombre" name="Nombre">
+                 <input id="Nombre" type="text"   placeholder="Nombre" name="Nombre">
                  <br>
                  <label for="Apellido"> Apellido</label>
                  <input id="Apellido" type="text" placeholder="Apellido" name="Apellido">
@@ -48,12 +49,19 @@
                  <label for="Email"> Email</label>
                  <input id="Email" type="text" placeholder="Email" name="Email">
                  <br>
-                 <label for="Consulta"> Consulta</label>
-                 <input id="Consulta" type="text" placeholder="Consulta" name="Consulta">
+                 <!--<label for="Consulta"> Consulta</label>
+                 <input id="Consulta" type="text" placeholder="Consulta" name="Consulta">-->
+                 <label for="exampleFormControlTextarea1" class="form-label"> Consulta</label>
+                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                  <br>
+                 <div class="mb-3">
+                    <label for="formFile" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
                  <button type="submit">Enviar</button>
-                 <button type="reset">borrar</button>
+                 <button type="reset" >borrar</button>
 
+                 
         </form>
     </section>
     </main>
