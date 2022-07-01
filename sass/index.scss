@@ -1,0 +1,14 @@
+/* MISC */
+@import './misc/_variables';
+@import './misc/_normalize';
+@import './misc/_mixins';
+
+/*PARTIALS*/
+@import './partials/_header';
+@import './partials/_footer';
+
+/*VIEWS*/
+@import './views/_tienda';
+@import './views/_carrodecompras';
+@import './views/_medidasycolores';
+@import './views/_contacto';
