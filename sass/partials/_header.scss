@@ -3,32 +3,28 @@ header {
     background-image: url(../Imagenes/mar.jpg);
     background-size: cover;
     }
-    & .logoprincipal {
-        background-position: center;
-        flex-basis: 40%;
-    }
-    & nav ul li a {
+     nav ul li a {
                  color: white;
     }
-    & .blanquito {
+    .blanquito {
     color: white;
     }
-    & .grandecito {
+    .grandecito {
     font-size: 30px;
     }
-    & .centrado {
+    .centrado {
         text-align: center;
     }
-    & #menu a{
+     #menu a{
         text-decoration: none;
     }
-    & #menu ul li a{
+     #menu ul li a{
         display: flex;
         align-items: center;
         justify-content: space-around;
         padding: 10px 30px; 
     }
-    & #menu ul li :hover{
+     #menu ul li :hover{
         background-color: #42B881;
         padding: 20px 100px;
         border-radius: 5px;

@@ -17,7 +17,44 @@
         <div class="logo-principal">
          <img src="./Imagenes/Logo1.jpg" alt="logo estampados con onda">
         </div>
-        <nav id="menu" class="banner-navegation">
+    <!-- Navegador con Bootstrap -->
+<section class="navegador-bootstrap">
+  <nav class="navbar navbar-expand-lg bg-light justify-content-center">
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Poleras con Onda</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="" class="blanquito grandecito" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="./views/tienda.html" class="grandecito">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/carrodecompras.html" class="grandecito">Carro de compras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/medidasycolores.html"class="grandecito">Medidas y colores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/contacto.html" class="grandecito">Contacto</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+  </nav>
+</section>
+        <nav id="menu" class="banner-navegation justify-content-center">
             <ul>
                 <li>
                     <a href="" class="blanquito grandecito">Inicio</a>
@@ -42,7 +79,6 @@
     <!-- cierre de fila logo + nav -->
     <!-- fila de información de mi sitio -->
     <main class="container">
-      
         <article id="párrafopyme" class="box"> 
             <h2 class="grandecito centrado"> Estampados con Onda </h2>
               <p class= "grandecito centrado"> Somos una pyme que ofrece estampados de buena calidad en poleras, poleras manga larga y polerones sobre diversas temáticas.
@@ -51,16 +87,20 @@
     </main>
     <aside class="sidebar">
         <picture class="box__img">
-            <img src="./Imagenes/musica1.jpg" alt="polera de pink floyd" width="80%">
+          <h3> Música </h3>
+            <img src="./Imagenes/musica1.jpg" alt="polera de pink floyd" width="98%">
         </picture>
         <picture class="box__img">
-            <img src="./Imagenes/anime11.jpg" alt="polera hunterx" width="80%">
+          <h3> Anime </h3>
+            <img src="./Imagenes/anime11.jpg" alt="polera hunterx" width="98%">
         </picture>
         <picture class="box__img">
-            <img src="./Imagenes/juegos1.jpg" alt="polera donkey kong" width="80%">
+          <h3> Juegos </h3>
+            <img src="./Imagenes/juegos1.jpg" alt="polera donkey kong" width="98%">
         </picture>
         <picture class="box__img">
-                <img src="./Imagenes/series1.jpg" alt="polera black mirror" width="80%">
+          <h3> Series </h3>
+                <img src="./Imagenes/series1.jpg" alt="polera black mirror" width="98%">
         </picture>
         
         
@@ -91,11 +131,13 @@
 
     <div class="widget-1">
         <picture class="box__img">
+          <h3> Estilo </h3>
             <img src="./Imagenes/polera1.jpg" class="img-rounded" alt="Mujer con polera estampada" width="95%" >
         </picture>
     </div>
     <div class="widget-2">
         <picture class="box__img">
+          <h3> Calidad </h3>
             <img src="./Imagenes/polera 2.jpg" alt="Hombre con polera estampada de espalda" width="95%">
         </picture>
     </div>
