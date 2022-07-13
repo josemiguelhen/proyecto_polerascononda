@@ -38,8 +38,37 @@ body {
     font-size: 400%;
 }
 
+.medidas {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
 
 /*Normalización*/
+
+:root{
+    /*Colors*/
+    --primary:
+    --secondary:
+    --alternative:
+    --text-color:
+    --base:
+
+    /*Spacings*/
+    --spacing-large: 6rem;
+    --spacing-medium: 2.4rem;
+    --spacing-small: 1rem;
+
+    /*Font-family*/
+    --font-principal:
+    --font-title:
+
+    /*Font-Sizes*/
+    --text-large:5.2em;
+    --text-medium:2,4em;
+    --text-base:1.6em;
+    --text-small:1.4em;
+}
 *{
     margin: 0;
     padding: 0;
@@ -398,11 +427,6 @@ header {
      background-color: aliceblue;
  }
  
- .medidas {
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     font-weight: bold;
-     font-size: 20px;
- }
 
  .carro-de-compra {
      font-size: 20px;
@@ -434,11 +458,6 @@ header {
     font-size:medium;
  }
 
-
- .navegador-bootstrap {
-    display: flex;
-    flex-wrap: nowrap;
- }
 
 .box {
     background-image: linear-gradient(to bottom, #c6cfc8 , white);
@@ -472,3 +491,14 @@ header {
 .sidebar {
     margin: 10px 10px 10px 10px;
 }
+
+.navbar div a {
+    color: white;
+    font-size: medium;
+}
+
+.navbar .navbar-brand {
+    font-size: x-large;
+}
+
+
