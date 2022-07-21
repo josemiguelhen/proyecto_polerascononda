@@ -8,44 +8,10 @@
 @import './partials/_footer';
 
 /*VIEWS*/
+@import './views/_inicio';
 @import './views/_tienda';
 @import './views/_carrodecompras';
 @import './views/_medidasycolores';
 @import './views/_contacto';
 
 
-/*HEADER*/
-header {
-    background-image: url(../Imagenes/mar.jpg);
-    background-size: cover;
-    }
-    .logoprincipal {
-        background-position: center;
-        flex-basis: 40%;
-    }
-     nav ul li a {
-                 color: white;
-    }
-     .blanquito {
-    color: white;
-    }
-    .grandecito {
-    font-size: 30px;
-    }
-    .centrado {
-        text-align: center;
-    }
-     #menu a{
-        text-decoration: none;
-    }
-     #menu ul li a{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px 30px; 
-    }
-     #menu ul li :hover{
-        background-color: #42B881;
-        padding: 20px 100px;
-        border-radius: 5px;
-        }

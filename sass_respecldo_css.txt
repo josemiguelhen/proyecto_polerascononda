@@ -1,11 +1,43 @@
 /*Fuentes*/
 @import url('https://fonts.googleapis.com/css2? family=Libre+Bodoni:ital,wght@1,400;1,600&family=Roboto+Slab:wght@200;400&display=swap');
 
+body {
+    font-family: var(--font-principal);
+    font-weight: 200;
+}
+
+.container h2 {
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-weight: bold;
+    font-size: 500%;
+    margin-bottom: 30px;
+}
+
+.container p {
+    font-family: var(--font-title);
+    font-weight: 400;
+}
+
+#navbarSupportedContent ul li a {
+    font-family: var(--font-principal);
+    font-weight: 1200;
+
+}
 
 .formulario {
     font-family: var(--font-principal);
     font-weight: 200;
     font-weight: bold;
+}
+
+.widget-1 h3,
+.widget-2 h3{
+    font-family: var(--font-title);
+    font-weight: 600;
+    font-weight: bold;
+    font-size: 400%;
+    gap: var(--text-small);
 }
 
 .medidas {
@@ -14,7 +46,7 @@
     font-size: 20px;
 }
 
-/*VARIABLES*/
+/*Normalización*/
 
 :root{
     /*Colors*/
@@ -43,9 +75,6 @@
     --text-base:1.6em;
     --text-small:1.4em;
 }
-
-/*NORMALIZE*/
-
 *{
     margin: 0;
     padding: 0;
@@ -74,40 +103,34 @@ a {
 
 /*HEADER*/
 
+.blanquito {
+    color: white;
+}
+
+.grandecito {
+    font-size: 30px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.logoprincipal {
+    background-position: center;
+    flex-basis: 40%;
+}
+
+#párrafopyme { 
+    background-color:#c6cfc8;
+}
+
 header {
     background-image: url(../Imagenes/mar.jpg);
     background-size: cover;
-    font-weight: 500; }
-    header.contenedor .logo-principal {
-      text-align: center; }
-    header .navegador-boostrap .navbar .container-fluid {
-      background-color: #3B3BDB; }
-    header.navbar-nav .nav-link {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: inline-block;
-      justify-content: space-arounds;
-      padding: 20px; }
-    header.navbar div a {
-      color: white;
-      font-size: medium; }
-    header.collapse ul li a {
-      font-family: "Roboto Slab", serif;
-      font-weight: 1200; }
-  
-/*FOOTER*/
+    font-weight: 500;
+}
 
-footer {
-    background-color: #3B3BDB; }
-    footer .footer-pag h2 h3 h4 h5 {
-      font-size: 15px;
-      background-color: #3B3BDB;
-      color: white;
-      font-size: medium; }
-    footer .footer-pag .corp {
-      float: right; }
-  
+
 /*CARDS*/
 .cards {
     display: flex;
@@ -120,64 +143,40 @@ footer {
     margin: 0 auto;
 }*/
 
-/*INICIO*/
-
-body {
-    background-color: cadetblue;
-    font-family: "Roboto Slab", serif;
-    font-weight: 200; }
-    body .container h2 {
-      font-family: "Libre Bodoni", serif;
-      font-weight: 600;
-      font-weight: bold;
-      font-size: 500%;
-      margin-bottom: 30px; }
-    body p {
-      font-family: "Libre Bodoni", serif;
-      font-weight: 400; }
-    body .box {
-      background-image: linear-gradient(to bottom, #c6cfc8, white);
-      background-color: #c6cfc8; }
-    body .grandecito {
-      font-size: 30px; }
-    body .centrado {
-      text-align: center; }
-  
-  .widget-1 h3,
-  .widget-2 h3 {
-    font-family: "Libre Bodoni", serif;
-    font-weight: 600;
-    font-weight: bold;
-    font-size: 400%;
-    gap: 1.4em; }
-  
-  .contenedor {
+.contenedor {
     width: 99%;
     max-width: 1000;
-    margin: 20px auto;
+    margin:20px auto;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, auto);
+
     grid-template-areas: "header header header"
-   "container container sidebar"
-   "widget-1 widget-2 sidebar"
-   "carousel-slide carousel-slide sidebar"
-   "footer footer footer"; }
-  
-  .contenedor > div,
-  .contenedor .container,
-  .contenedor .sidebar {
+                         "container container sidebar"
+                         "widget-1 widget-2 sidebar"
+                         "carousel-slide carousel-slide sidebar"
+                         "footer footer footer";
+
+    
+}
+
+.contenedor > div,
+.contenedor .container,
+.contenedor .sidebar {
     padding: 20px;
-    border-radius: 4px; }
-  
-  .contenedor .header {
-    grid-area: header; }
-  
-  .contenedor .container {
-    grid-area: container; }
-  
-  .contenedor .sidebar {
+    border-radius: 4px;
+}
+
+.contenedor .header {
+    grid-area: header;
+}
+
+.contenedor .container {
+   grid-area: container;
+}
+
+.contenedor .sidebar {
     grid-column: 3/4;
     background: #42B881;
     text-align: center;
@@ -186,15 +185,18 @@ body {
     justify-content: center;
     grid-area: sidebar;
     align-items: center;
-    flex-direction: column; }
-  
-  .contenedor .carousel-slide {
+    flex-direction: column;
+}
+
+.contenedor .carousel-slide {
     grid-area: carousel slide;
     height: 500px;
-    width: 500px; }
-  
-  .contenedor .widget-1,
-  .contenedor .widget-2 {
+    width: 500px;
+
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
     background: var(--widget);
     color: #fff;
     height: 500px;
@@ -202,35 +204,20 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
-    justify-content: center; }
-  
-  .contenedor .widget-1 {
-    grid-area: widget-1; }
-  
-  .contenedor .widget-2 {
-    grid-area: widget-2; }
-  
-  .contenedor .footer {
-    grid-area: footer; }
-  
-  .sidebar {
-    background: repeating-radial-gradient(#42B881, #42B881 2px, white 2px, white 7px);
-    margin: 10px 10px 10px 10px; }
-  
-  .sidebar .box__img {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 400px;
     justify-content: center;
-    align-items: center; }
-  
-  .sidebar h3 {
-    font-family: "Libre Bodoni", serif;
-    font-size: 5.2em;
-    font-weight: 600;
-    font-weight: bold; }
-  
+}
+
+.contenedor .widget-1{
+    grid-area: widget-1;
+}
+
+.contenedor .widget-2{
+    grid-area: widget-2;
+}
+
+.contenedor .footer{
+    grid-area: footer;
+}
 
 @media screen and (min-width:0px) and (max-width: 550px){
     .contenedor{
@@ -246,6 +233,10 @@ body {
 
     }
 }
+
+
+
+
 
 
 /*Grid Galería tienda*/
@@ -354,10 +345,33 @@ body {
     text-align: center;
 }
 
+.logo-principal {
+    text-align: center;
+}
+
+.container-fluid{
+    background-color: var(--secondary)
+}
+
+.nav-link {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link{
+    display: inline-block;
+    justify-content: space-arounds;
+    padding: 20px;
+}
+
 p {
     font-weight: 700;
 }
 
+.corp {
+     float: right;
+}
 
 
 .galeria_card {
@@ -389,9 +403,29 @@ p {
      font-size: 20px;
  }
 
+ .footer-pag {
+     font-size: 15px;
+ }
+
+ .footer-pag {
+     background-color: var(--secondary);
+     color: var(--text-color);
+     font-size: medium;
+ }
 .galeria_card div {
      display: flex;
      justify-content: space-evenly;
+ }
+
+ .footer-pag h2 h3 h4 h5 {
+    background-color: var(--secondary);
+ }
+
+ .widget-1,
+ .widget-2 {
+    background-image: linear-gradient(to bottom, #3895ed , white);
+    padding: var(--spacing-small);
+    
  }
 
  .formulario {
@@ -404,6 +438,50 @@ p {
     font-weight: 200;
     font-weight: bold;
  }
+
+
+.box {
+    background-image: linear-gradient(to bottom, #c6cfc8 , white);
+}
+
+.sidebar .box__img {
+      display: flex; 
+      flex-direction: column; 
+      justify-content: space-between;
+      height: 400px;
+      justify-content: center;
+      align-items: center;
+}
+ 
+.sidebar h3 {
+    font-family: var(--font-title);
+    font-size:var(--text-large);
+    font-weight: 600;
+    font-weight: bold;
+}
+
+.sidebar{
+    background: repeating-radial-gradient(#42B881, #42B881 2px, white 2px, white 7px);
+}
+
+.container {
+    margin: -10px -60px -70px -10px;
+}
+
+.sidebar {
+    margin: 10px 10px 10px 10px;
+}
+
+.navbar div a {
+    color: white;
+    font-size: medium;
+}
+
+.navbar .navbar-brand {
+    font-size: var(--text-medium);
+    font-family: var(--font-principal);
+}
+
 
 .medidas h2{
     font-size: var(--text-base);

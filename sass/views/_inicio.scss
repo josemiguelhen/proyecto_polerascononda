@@ -1,0 +1,136 @@
+body{
+    background-color: $primary;
+    font-family: $font-principal;
+    font-weight: 200;
+    
+    .container h2 {
+        font-family: $font-title;
+        font-weight: 600;
+        font-weight: bold;
+        font-size: 500%;
+        margin-bottom: 30px;
+        }   
+        & p {
+        font-family: $font-title;
+        font-weight: 400;
+        }
+        & .box {
+        background-image: linear-gradient(to bottom, #c6cfc8 , white);
+        background-color:#c6cfc8;
+        }
+        & .grandecito {
+            font-size: 30px;
+        }
+    
+        & .centrado {
+             text-align: center;
+        }
+    }
+        
+
+    .widget-1 h3,
+    .widget-2 h3{
+        font-family: $font-title;
+        font-weight: 600;
+        font-weight: bold;
+        font-size: 400%;
+        gap: $text-small;
+    }
+
+    .contenedor {
+        width: 99%;
+        max-width: 1000;
+        margin:20px auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, auto);
+    
+        grid-template-areas: "header header header"
+                             "container container sidebar"
+                             "widget-1 widget-2 sidebar"
+                             "carousel-slide carousel-slide sidebar"
+                             "footer footer footer";
+    
+        
+        }
+    
+        .contenedor > div,
+        .contenedor .container,
+        .contenedor .sidebar {
+            padding: 20px;
+            border-radius: 4px;
+        }
+    
+        .contenedor .header {
+        grid-area: header;
+        }
+    
+        .contenedor .container {
+       grid-area: container;
+        }
+    
+        .contenedor .sidebar {
+        grid-column: 3/4;
+        background: #42B881;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: sidebar;
+        align-items: center;
+        flex-direction: column;
+        }
+    
+        .contenedor .carousel-slide {
+        grid-area: carousel slide;
+        height: 500px;
+        width: 500px;
+        }
+    
+       .contenedor .widget-1,
+       .contenedor .widget-2 {
+        background: var(--widget);
+        color: #fff;
+        height: 500px;
+        width: 500px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    
+        .contenedor .widget-1{
+        grid-area: widget-1;
+        }
+    
+        .contenedor .widget-2{
+        grid-area: widget-2;
+        }
+    
+        .contenedor .footer{
+        grid-area: footer;
+        }
+
+    .sidebar{
+        background: repeating-radial-gradient(#42B881, #42B881 2px, white 2px, white 7px);
+            margin: 10px 10px 10px 10px;
+        }
+        .sidebar .box__img {
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar h3 {
+            font-family: $font-title;
+            font-size: $text-large;
+            font-weight: 600;
+            font-weight: bold;
+        }
+        
+
+

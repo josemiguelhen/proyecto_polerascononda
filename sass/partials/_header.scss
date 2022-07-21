@@ -2,38 +2,30 @@
 header {
     background-image: url(../Imagenes/mar.jpg);
     background-size: cover;
-    }
-     nav ul li a {
-                 color: white;
-    }
-    .blanquito {
-    color: white;
-    }
-    .grandecito {
-    font-size: 30px;
-    }
-    .centrado {
+    font-weight: 500;
+
+    &.contenedor .logo-principal {
         text-align: center;
     }
-     #menu a{
-        text-decoration: none;
+    .navegador-boostrap .navbar .container-fluid{
+        background-color: $secondary;
     }
-     #menu ul li a{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px 30px; 
-    }
-     #menu ul li :hover{
-        background-color: #42B881;
-        padding: 20px 100px;
-        border-radius: 5px;
+
+      &.navbar-nav .nav-link {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+          justify-content: space-arounds;
+          padding: 20px;
+       }
+        &.navbar div a {
+           color: white;
+           font-size: medium;
         }
-
-
-
-
-
-
-
+        &.collapse ul li a {
+        font-family: $font-principal;
+        font-weight: 1200;
+        }  
+    }
 

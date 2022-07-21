@@ -1,4 +1,8 @@
 /* MISC */
+/*Colors*/
+/*Spacings*/
+/*Font-family*/
+/*Font-Sizes*/
 * {
   margin: 0;
   padding: 0;
@@ -7,66 +11,138 @@
 /*PARTIALS*/
 header {
   background-image: url(../Imagenes/mar.jpg);
-  background-size: cover; }
+  background-size: cover;
+  font-weight: 500; }
+  header.contenedor .logo-principal {
+    text-align: center; }
+  header .navegador-boostrap .navbar .container-fluid {
+    background-color: #3B3BDB; }
+  header.navbar-nav .nav-link {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    justify-content: space-arounds;
+    padding: 20px; }
+  header.navbar div a {
+    color: white;
+    font-size: medium; }
+  header.collapse ul li a {
+    font-family: "Roboto Slab", serif;
+    font-weight: 1200; }
 
-nav ul li a {
-  color: white; }
-
-.blanquito {
-  color: white; }
-
-.grandecito {
-  font-size: 30px; }
-
-.centrado {
-  text-align: center; }
-
-#menu a {
-  text-decoration: none; }
-
-#menu ul li a {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px 30px; }
-
-#menu ul li :hover {
-  background-color: #42B881;
-  padding: 20px 100px;
-  border-radius: 5px; }
+footer {
+  background-color: #3B3BDB; }
+  footer .footer-pag h2 h3 h4 h5 {
+    font-size: 15px;
+    background-color: #3B3BDB;
+    color: white;
+    font-size: medium; }
+  footer .footer-pag .corp {
+    float: right; }
 
 /*VIEWS*/
-/*HEADER*/
-header {
-  background-image: url(../Imagenes/mar.jpg);
-  background-size: cover; }
+body {
+  background-color: cadetblue;
+  font-family: "Roboto Slab", serif;
+  font-weight: 200; }
+  body .container h2 {
+    font-family: "Libre Bodoni", serif;
+    font-weight: 600;
+    font-weight: bold;
+    font-size: 500%;
+    margin-bottom: 30px; }
+  body p {
+    font-family: "Libre Bodoni", serif;
+    font-weight: 400; }
+  body .box {
+    background-image: linear-gradient(to bottom, #c6cfc8, white);
+    background-color: #c6cfc8; }
+  body .grandecito {
+    font-size: 30px; }
+  body .centrado {
+    text-align: center; }
 
-.logoprincipal {
-  background-position: center;
-  flex-basis: 40%; }
+.widget-1 h3,
+.widget-2 h3 {
+  font-family: "Libre Bodoni", serif;
+  font-weight: 600;
+  font-weight: bold;
+  font-size: 400%;
+  gap: 1.4em; }
 
-nav ul li a {
-  color: white; }
+.contenedor {
+  width: 99%;
+  max-width: 1000;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header header header" "container container sidebar" "widget-1 widget-2 sidebar" "carousel-slide carousel-slide sidebar" "footer footer footer"; }
 
-.blanquito {
-  color: white; }
+.contenedor > div,
+.contenedor .container,
+.contenedor .sidebar {
+  padding: 20px;
+  border-radius: 4px; }
 
-.grandecito {
-  font-size: 30px; }
+.contenedor .header {
+  grid-area: header; }
 
-.centrado {
-  text-align: center; }
+.contenedor .container {
+  grid-area: container; }
 
-#menu a {
-  text-decoration: none; }
-
-#menu ul li a {
+.contenedor .sidebar {
+  grid-column: 3/4;
+  background: #42B881;
+  text-align: center;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 10px 30px; }
+  justify-content: center;
+  grid-area: sidebar;
+  align-items: center;
+  flex-direction: column; }
 
-#menu ul li :hover {
-  background-color: #42B881;
-  padding: 20px 100px;
-  border-radius: 5px; }
+.contenedor .carousel-slide {
+  grid-area: carousel slide;
+  height: 500px;
+  width: 500px; }
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+  background: var(--widget);
+  color: #fff;
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.contenedor .widget-1 {
+  grid-area: widget-1; }
+
+.contenedor .widget-2 {
+  grid-area: widget-2; }
+
+.contenedor .footer {
+  grid-area: footer; }
+
+.sidebar {
+  background: repeating-radial-gradient(#42B881, #42B881 2px, white 2px, white 7px);
+  margin: 10px 10px 10px 10px; }
+
+.sidebar .box__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  justify-content: center;
+  align-items: center; }
+
+.sidebar h3 {
+  font-family: "Libre Bodoni", serif;
+  font-size: 5.2em;
+  font-weight: 600;
+  font-weight: bold; }
