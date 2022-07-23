@@ -408,3 +408,22 @@ p {
 .medidas h2{
     font-size: var(--text-base);
 }
+
+
+.galeria .galeria_card .btn, .galeria .galeria_card .btn--agregar, .galeria .galeria_card .btn--eliminar {
+    width: 150px;
+    padding: 10px 12px;
+    font-size: 18px;
+    margin: 0 auto;
+    border: none; }
+  
+  .galeria .galeria_card .btn--agregar {
+    background-color: aqua; }
+    .galeria .galeria_card .btn--agregar:hover {
+      background-color: aqua; }
+  
+  .galeria .galeria_card .btn--eliminar {
+    color: white;
+    background-color: black; }
+    .galeria .galeria_card .btn--eliminar:hover {
+      background-color: black; }

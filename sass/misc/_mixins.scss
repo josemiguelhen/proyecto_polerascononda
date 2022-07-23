@@ -1,0 +1,13 @@
+.box__img {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin box__img ($dir,$jus,$alg,$hei){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $alg;
+    height: $hei;
+}

@@ -1,5 +1,5 @@
 body{
-    background-color: $primary;
+    background-color: map-get($colors,$primary);
     font-family: $font-principal;
     font-weight: 200;
     
@@ -34,7 +34,7 @@ body{
         font-weight: 600;
         font-weight: bold;
         font-size: 400%;
-        gap: $text-small;
+        gap: map-get($font-sizes, $text-small);
     }
 
     .contenedor {
@@ -72,7 +72,7 @@ body{
     
         .contenedor .sidebar {
         grid-column: 3/4;
-        background: #42B881;
+        background:map-get($colors, $sidebar);
         text-align: center;
         display: flex;
         align-items: center;
@@ -90,7 +90,7 @@ body{
     
        .contenedor .widget-1,
        .contenedor .widget-2 {
-        background: var(--widget);
+        background: map-get($colors, $widget);
         color: #fff;
         height: 500px;
         width: 500px;
@@ -117,17 +117,18 @@ body{
             margin: 10px 10px 10px 10px;
         }
         .sidebar .box__img {
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-between;
+            @include box__img(column,space-between,center,center);
+            //display: flex; 
+            //flex-direction: column; 
+            //justify-content: space-between;
+            //justify-content: center;
+            //align-items: center;
             height: 400px;
-            justify-content: center;
-            align-items: center;
         }
 
         .sidebar h3 {
             font-family: $font-title;
-            font-size: $text-large;
+            font-size: map-get($font-sizes, $text-large);
             font-weight: 600;
             font-weight: bold;
         }

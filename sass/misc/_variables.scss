@@ -6,18 +6,63 @@
     $text-color: white;
     $tabla: aliceblue; 
     $cards: aquamarine;
+
+    $colors:(
+        primary:cadetblue,
+        secondary: #3B3BDB,
+        sidebar: #42B881,
+        widget: #55aBfd,
+        text-color: white,
+        tabla: aliceblue,
+        cards: aquamarine
+    );
+
+    @each $key, $val in $colors {
+        #{$key}{
+            background-color: #{$val};
+        }
+        
+    }
     
     /*Spacings*/
     $spacing-large: 6rem;
     $spacing-medium: 2.4rem;
     $spacing-small: 1rem;
 
+    $spacings:(
+        spacing-large: 6rem,
+        spacing-medium: 2.4rem,
+        spacing-small: 1rem
+    );
+
+    @each $key, $val in $spacings {
+        #{$key}{
+            padding: #{$val};
+        }
+        
+    }
+       
+
     /*Font-family*/
     $font-principal:'Roboto Slab', serif;
     $font-title:'Libre Bodoni', serif;
+
 
     /*Font-Sizes*/
     $text-large:5.2em;
     $text-medium:2.4em;
     $text-base:1.6em;
     $text-small:1.4em;
+
+    $font-sizes:(
+        text-large:5.2em,
+        text-medium:2.4em,
+        text-base:1.6em,
+        text-small:1.4em
+    );
+
+    @each $key, $val in $font-sizes {
+        #{$key}{
+            font-size: #{$val};
+        }
+    }

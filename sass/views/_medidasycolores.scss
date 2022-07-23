@@ -1,0 +1,6 @@
+.medidas h2{
+    font-size: map-get($font-sizes,$text-base);
+}
+table {
+    background-color: map-get($colors, $tabla);
+}
