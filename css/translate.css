@@ -67,34 +67,47 @@ a {
   justify-content: space-around; }
 
 /*PARTIALS*/
+body {
+  background-color: cadetblue; }
+
 header {
   background-image: url(../Imagenes/mar.jpg);
   background-size: cover;
-  font-weight: 500; }
-  header.contenedor .logo-principal {
-    text-align: center; }
-  header .navegador-boostrap .navbar .container-fluid {
-    background-color: #3B3BDB; }
-  header.navbar-nav .nav-link {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    justify-content: space-arounds;
-    padding: 20px; }
-  header.navbar div a {
-    color: white;
-    font-size: medium; }
-  header.collapse ul li a {
-    font-family: "Roboto Slab", serif;
-    font-weight: 1200; }
+  font-weight: 600;
+  font-size: xx-large; }
 
-footer .footer-pag h2 h3 h4 h5 {
-  font-size: 15px;
+.contenedor .logo-principal {
+  text-align: center;
+  justify-content: center; }
+
+.navegador-bootstrap .navbar .container-fluid {
+  background-color: #3B3BDB; }
+
+.navbar-nav .nav-link {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  justify-content: space-arounds;
+  padding: 20px; }
+
+.navbar div a {
   color: white;
   font-size: medium; }
 
-footer .footer-pag .corp {
+.collapse ul li a {
+  font-family: "Roboto Slab", serif;
+  font-weight: 1200; }
+
+footer {
+  background-color: #3B3BDB;
+  color: white; }
+
+.footer-pag h2 h3 h4 h5 {
+  font-size: 15px;
+  font-size: medium; }
+
+.corp {
   float: right; }
 
 /*VIEWS*/
@@ -117,90 +130,72 @@ body {
     font-size: 30px; }
   body .centrado {
     text-align: center; }
-
-.widget-1 h3,
-.widget-2 h3 {
-  font-family: "Libre Bodoni", serif;
-  font-weight: 600;
-  font-weight: bold;
-  font-size: 400%; }
-
-.contenedor {
-  width: 99%;
-  max-width: 1000;
-  margin: 20px auto;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, auto);
-  grid-template-areas: "header header header"
-                       "container container sidebar"
-                       "widget-1 widget-2 sidebar"
-                       "carousel-slide carousel-slide sidebar"
-                       "footer footer footer"; }
-
-.contenedor > div,
-.contenedor .container,
-.contenedor .sidebar {
-  padding: 20px;
-  border-radius: 4px; }
-
-.contenedor .header {
-  grid-area: header; }
-
-.contenedor .container {
-  grid-area: container; }
-
-.contenedor .sidebar {
-  grid-column: 3/4;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: sidebar;
-  align-items: center;
-  flex-direction: column; }
-
-.contenedor .carousel-slide {
-  grid-area: carousel slide;
-  height: 500px;
-  width: 500px; }
-
-.contenedor .widget-1,
-.contenedor .widget-2 {
-  color: #fff;
-  height: 500px;
-  width: 500px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.contenedor .widget-1 {
-  grid-area: widget-1; }
-
-.contenedor .widget-2 {
-  grid-area: widget-2; }
-
-.contenedor .footer {
-  grid-area: footer; }
-
-.sidebar {
-  background: repeating-radial-gradient(#42B881, #42B881 2px, white 2px, white 7px);
-  margin: 10px 10px 10px 10px; }
-
-.sidebar .box__img {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: center;
-  height: 400px; }
-
-.sidebar h3 {
-  font-family: "Libre Bodoni", serif;
-  font-weight: 600;
-  font-weight: bold; }
+  body .widget-1 h3,
+  body .widget-2 h3 {
+    font-family: "Libre Bodoni", serif;
+    font-weight: 600;
+    font-weight: bold;
+    font-size: 400%; }
+  body .contenedor {
+    width: 99%;
+    max-width: 1000;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "header header header" "container container sidebar" "widget-1 widget-2 sidebar" "carousel-slide carousel-slide sidebar" "footer footer footer"; }
+  body .contenedor > div,
+  body .contenedor .container,
+  body .contenedor .sidebar {
+    padding: 20px;
+    border-radius: 4px; }
+  body .contenedor .header {
+    grid-area: header; }
+  body .contenedor .container {
+    grid-area: container; }
+  body .contenedor .sidebar {
+    grid-column: 3/4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: sidebar;
+    align-items: center;
+    flex-direction: column; }
+  body .contenedor .carousel-slide {
+    grid-area: carousel slide;
+    height: 500px;
+    width: 500px; }
+  body .contenedor .widget-1,
+  body .contenedor .widget-2 {
+    color: #fff;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  body .contenedor .widget-1 {
+    grid-area: widget-1; }
+  body .contenedor .widget-2 {
+    grid-area: widget-2; }
+  body .contenedor .footer {
+    grid-area: footer; }
+  body .sidebar {
+    background: repeating-radial-gradient(#42B881, #42B881 2px, white 2px, white 7px);
+    margin: 10px 10px 10px 10px; }
+  body .sidebar .box__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: center;
+    height: 400px; }
+  body .sidebar h3 {
+    font-family: "Libre Bodoni", serif;
+    font-weight: 600;
+    font-weight: bold; }
 
 .galeria {
   display: grid;
@@ -215,8 +210,11 @@ body {
   padding: 10px;
   margin: 10px;
   display: inline-block;
-  font-family: "Roboto Slab", serif;
+  background-color: aquamarine; }
+
+.galeria .galeria_card p {
   font-weight: bold;
+  font-family: "Roboto Slab", serif;
   font-size: 25px; }
 
 .galeria img {
@@ -312,9 +310,20 @@ body {
 
 .carro-de-compra {
   font-family: "Roboto Slab", serif;
-  font-weight: 200;
+  font-weight: 400;
   font-weight: bold;
   font-size: 20px; }
+
+.medidas {
+  font-family: var(--font-principal);
+  font-weight: bold;
+  font-size: 20px; }
+
+.medidas h2 {
+  font-size: 1.6em; }
+
+.medidas table {
+  background-color: aliceblue; }
 
 .formulario {
   font-size: medium;

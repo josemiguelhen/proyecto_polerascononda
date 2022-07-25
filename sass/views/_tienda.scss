@@ -1,9 +1,9 @@
-.galeria {
+
+  .galeria {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(4,1fr);
     }
-
     .galeria .galeria_card {
        width: 300px;
        border: 1px solid black;
@@ -12,10 +12,12 @@
        padding: 10px;
        margin: 10px;
        display:inline-block;
-       font-family: $font-principal;
+       background-color: $cards;
+    }
+    .galeria .galeria_card p {
        font-weight: bold;
+       font-family: $font-principal;
        font-size: 25px;
-       background-color: map-get($colors, $cards);
     }
 
     .galeria img {

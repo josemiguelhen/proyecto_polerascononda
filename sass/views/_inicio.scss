@@ -25,7 +25,7 @@ body{
         & .centrado {
              text-align: center;
         }
-    }
+    
         
 
     .widget-1 h3,
@@ -63,57 +63,57 @@ body{
         }
     
         .contenedor .header {
-        grid-area: header;
+            grid-area: header;
         }
     
         .contenedor .container {
-       grid-area: container;
+            grid-area: container;
         }
     
         .contenedor .sidebar {
-        grid-column: 3/4;
-        background:map-get($colors, $sidebar);
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        grid-area: sidebar;
-        align-items: center;
-        flex-direction: column;
+            grid-column: 3/4;
+            background:map-get($colors, $sidebar);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: sidebar;
+            align-items: center;
+            flex-direction: column;
         }
     
         .contenedor .carousel-slide {
-        grid-area: carousel slide;
-        height: 500px;
-        width: 500px;
+            grid-area: carousel slide;
+            height: 500px;
+            width: 500px;
         }
     
        .contenedor .widget-1,
        .contenedor .widget-2 {
-        background: map-get($colors, $widget);
-        color: #fff;
-        height: 500px;
-        width: 500px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+           background: map-get($colors, $widget);
+           color: #fff;
+           height: 500px;
+           width: 500px;
+           text-align: center;
+           display: flex;
+           align-items: center;
+           justify-content: center;
         }
     
         .contenedor .widget-1{
-        grid-area: widget-1;
+            grid-area: widget-1;
         }
     
         .contenedor .widget-2{
-        grid-area: widget-2;
+            grid-area: widget-2;
         }
     
         .contenedor .footer{
-        grid-area: footer;
+            grid-area: footer;
         }
 
-    .sidebar{
-        background: repeating-radial-gradient(#42B881, #42B881 2px, white 2px, white 7px);
+        .sidebar{
+            background: repeating-radial-gradient(#42B881, #42B881 2px, white 2px, white 7px);
             margin: 10px 10px 10px 10px;
         }
         .sidebar .box__img {
@@ -132,6 +132,9 @@ body{
             font-weight: 600;
             font-weight: bold;
         }
+
+    }
+
         
 
 

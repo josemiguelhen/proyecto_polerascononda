@@ -1,6 +1,13 @@
-.medidas h2{
-    font-size: map-get($font-sizes,$text-base);
-}
-table {
-    background-color: map-get($colors, $tabla);
-}
+
+.medidas {
+    font-family: var(--font-principal);
+    font-weight: bold;
+    font-size: 20px;
+    }
+    .medidas h2{
+        font-size: $text-base;
+    }
+    .medidas table {
+    background-color: $tabla;
+    }
+

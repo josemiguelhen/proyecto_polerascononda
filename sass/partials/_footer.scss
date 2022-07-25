@@ -1,12 +1,13 @@
 footer {
-    background-color: map-get($colors,$secondary);
+    background-color: $secondary;
+    color: $text-color;
+    }
     .footer-pag h2 h3 h4 h5 {
         font-size: 15px;
         background-color: map-get($colors, $secondary);
-        color: $text-color;
         font-size: medium;
-       }
-    .footer-pag .corp {
-        float: right;
-       }
-}
+        }
+        .corp {
+          float: right;
+        }
+
